@@ -149,7 +149,7 @@ cite the LongPIBench paper when using this benchmark:
 
 ```
 @inproceedings{liu2026longpibench,
-  title={Formalizing and Benchmarking Prompt Injection Attacks and Defenses},
+  title={LongPIBench: A Long-Context Benchmark for Prompt Injection},
   author={Liu, Yupei and Jia, Yuqi and Gong, Neil Zhenqiang and Jia, Jinyuan},
   booktitle={EMNLP Findings},
   year={2026}
