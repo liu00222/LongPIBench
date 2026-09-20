@@ -145,6 +145,13 @@ See [DATA_CARD.md](DATA_CARD.md) for schemas and limitations.
 ## License and citation
 
 Code and released synthetic data are provided under the MIT license. Please
-cite the LongPIBench paper when using this benchmark. The final BibTeX entry
-should be added here when the EMNLP Findings 2026 proceedings entry is
-available.
+cite the LongPIBench paper when using this benchmark:
+
+```
+@inproceedings{liu2026longpibench,
+  title={Formalizing and Benchmarking Prompt Injection Attacks and Defenses},
+  author={Liu, Yupei and Jia, Yuqi and Gong, Neil Zhenqiang and Jia, Jinyuan},
+  booktitle={EMNLP Findings},
+  year={2026}
+}
+```
