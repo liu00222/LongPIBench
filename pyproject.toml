@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "longpibench"
+version = "1.0.0"
+description = "Long-context prompt-injection benchmark for review tasks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["huggingface_hub>=0.27"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.79,<3"]
+hf = ["accelerate>=1.6", "peft>=0.11", "torch>=2.2", "transformers>=4.51"]
+detection = ["torch>=2.2", "transformers>=4.51"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+longpibench = "longpibench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["longpibench*"]
+
+[tool.setuptools.package-data]
+longpibench = ["datasets/.gitkeep"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

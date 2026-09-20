@@ -1,0 +1,31 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments and build artifacts
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Generated benchmark output
+/results/
+
+# Downloaded from https://huggingface.co/datasets/RainWatcher/LongPIBench
+/longpibench/datasets/*
+!/longpibench/datasets/.gitkeep
+
+# Temporary, backup, and editor files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
